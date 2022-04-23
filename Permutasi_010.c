@@ -6,16 +6,16 @@ int factorial (int f) {
 	}
 
 	else {
-		return (f * factorial (f - 1));
+		return(f * factorial (f - 1));
 	}
 }
 
 int permutasi (int n, int k) {
-	int hasil;
+	 int hasil;
 
-	hasil = factorial(n) / factorial(n - k);
+	 hasil = factorial(n) / factorial (n-k);
 
-	return hasil;
+	 return hasil;
 }
 
 
@@ -24,10 +24,11 @@ int main () {
 
 	printf("Masukkan bilangan yang akan dilakukan permutasi : ");
 	scanf("%d", &n);
+
 	printf("Masukkan susunan yang akan diberikan : ");
 	scanf("%d", &k);
 
-	printf("Hasil faktorial : %d", permutasi(n, k));
+	printf("Nilai dari permutasi %d disusun %d adalah %d\n",n, k, permutasi (n, k));
 
 	return 0;
 }
